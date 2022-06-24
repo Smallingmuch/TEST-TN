@@ -3,6 +3,10 @@
     .navbar{
         background-color: black!important;
     }
+    .carousel-item img{
+        height: 80vh;
+        background-size: cover;
+    }
 }
 
 
