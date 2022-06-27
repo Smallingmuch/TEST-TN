@@ -1,8 +1,40 @@
- /* `lg` applies to medium devices (tablets, less than 992px) */
+body{
+    font-family: "Lato", sans-serif;
+	font-size: 1rem;
+	font-weight: 300;
+}
+.carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 3.5rem;
+    left: 25%;
+    padding-top: 1.25rem;
+    padding-bottom: 7rem;
+    color: #fff;
+    text-align: left;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgba(0, 0, 0, 0.486);
+   
+}
+.carousel-caption p{
+    font-family: "Lato";
+    font-size: 1.5rem;
+}
+
+
+
+
+
+/* `lg` applies to medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
     .navbar{
         background-color: black!important;
     }
+    .carousel-item img{
+        height: 100vh;
+        object-fit: cover;
+    }
+   
 }
 
 
@@ -19,7 +51,7 @@
     padding-top: 60px;
 }
 
-.sidebar a {
+.sidebar a, .OtherMenu a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
@@ -28,11 +60,11 @@
     transition: 0.3s;
 }
 
-.sidebar a:hover {
+.sidebar a:hover, .OtherMenu a:hover {
     color: #f1f1f1;
 }
 
-.sidebar .closebtn {
+.sidebar .closebtn, .OtherMenu .closebtn {
     position: absolute;
     top: 0;
     right: 25px;
@@ -56,13 +88,37 @@
     transition: margin-left .5s;
     padding: 16px;
 }
+
+
+.OtherMenu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 100!important;
+    top: 0;
+    right: 0;
+    background-color: rgb(182, 98, 98);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 
 @media screen and (max-height: 450px) {
     .sidebar {
         padding-top: 15px;
     }
-            .sidebar a {
-                font-size: 18px;
-            }
-        }
+    .OtherMenu {
+        padding-top: 15px;
+    }
+
+    .sidebar a, .OtherMenu a {
+        font-size: 18px;
+    }
+
+    .OtherMenu a {
+        font-size: 18px;
+    }
+        
+}
