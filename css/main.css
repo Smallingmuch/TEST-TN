@@ -176,12 +176,15 @@ body{
     }
     .carousel-caption{
         bottom: 3rem;
+<<<<<<< HEAD
     }
     #lg-device{
         display: none;
     }
     #sm-device{
         display: inline-block;
+=======
+>>>>>>> b6e2e68b9c5132dc04c0550d2ec83d57298d2fda
     }
    
       /* Centered text */
