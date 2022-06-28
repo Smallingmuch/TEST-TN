@@ -12,14 +12,16 @@
     <script src='main.js'></script>
 </head>
 <body>
-    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-transparent ">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-transparent shadow-lg ">
         <div class="container-fluid p-lg-4">
             <button class="navbar-toggler" onclick="ShowCloseButton()" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
                 <span class="navbar-toggler-icon"></span>
               </button>
 
-             
-          <a class="navbar-brand" href="#">Logo</a>
+              <a class="navbar-brand" href="#">Logo</a>
+              <button class="bg-info" id="sm-device" style="border-radius: 100px; height:40px; width:40px; border-color: white;" type="button" onclick="openOtherNav();" >
+                <span class="navbar-toggler-icon" style="color:black!important;"></span>
+              </button>
           
           <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
            
@@ -29,10 +31,10 @@
                     <a class="nav-link h2 text-white float-end" style="margin-top: .1rem; padding:1rem 1rem; border:2px solid white"  href="#">X</a>
                 </span>
               <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
+                <a class="nav-link" href="./index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About Us</a>
+                <a class="nav-link" href="./about.html">About Us</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Ministries</a>
@@ -55,7 +57,7 @@
             </ul>
           </div>
 
-          <button class="bg-info" style="border-radius: 100px; height:40px; width:40px; border-color: white;" type="button" onclick="openOtherNav();" >
+          <button class="bg-info" id="lg-device" style="border-radius: 100px; height:40px; width:40px; border-color: white;" type="button" onclick="openOtherNav();" >
             <span class="navbar-toggler-icon" style="color:black!important;"></span>
           </button>
 
@@ -78,7 +80,7 @@
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active" data-bs-interval="15000">
-            <img src="images/sliders/b1.jpg" class="d-block w-100" alt="...">
+            <img src="images/sliders/b1.jpg" class="d-block w-100" alt="slider image 1">
             <div class="carousel-caption text-white p-5">
                 <p>Welcome to</p>
                 <p>The Nigerian Baptist Church</p>
@@ -89,18 +91,25 @@
             </div>
           </div>
           <div class="carousel-item" data-bs-interval="1500">
-            <img src="images/sliders/b3.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption text-white">
-              <h5>Second slide label</h5>
-              <p>Some representative placeholder content for the second slide.</p>
-            </div>
+            <img src="images/sliders/b3.jpg" class="d-block w-100" alt="slider image 2">
+            <div class="carousel-caption text-white p-5">
+              <p>Welcome to</p>
+              <p>The Nigerian Baptist Church</p>
+            <h1>WORSHIP WITH US</h1>
+            <p>Our worship is Spirit-filled and encourates our visitors to enter into a time of praising God. We sing contemporary praise songs as well as mixing in occasional timeless hymns.</p>
+              <p><a class="btn btn-dark btn-lg">Read more</a></p>
+          </div>
           </div>
           <div class="carousel-item" data-bs-interval="1500">
-            <img src="images/sliders/b2.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption text-white">
-              <h5>Third slide label</h5>
-              <p>Some representative placeholder content for the third slide.</p>
-            </div>
+            <img src="images/sliders/b2.jpg" class="d-block w-100" alt="slider image 3">
+            <div class="carousel-caption text-white p-5">
+              <p>Welcome to</p>
+              <p>The Nigerian Baptist Church</p>
+            <h1>OUR CURRENT SERMON <br/> SERIES</h1>
+            <p>We are currently going through the powerful series "Emerge By the Law of 
+              The Spirit of Life".</p>
+              <p><a class="btn btn-dark btn-lg">Read more</a></p>
+          </div>
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">

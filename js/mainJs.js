@@ -24,12 +24,12 @@
 
         function openOtherNav() {
 
-            if(document.getElementById("OtherSidebar").style.width == "350px"){
+            if(document.getElementById("OtherSidebar").style.width == "300px"){
                 document.getElementById("OtherSidebar").style.width = "0";
                 //$('.navbar-toggler').show();
 
             }else{
-                document.getElementById("OtherSidebar").style.width = "350px";
+                document.getElementById("OtherSidebar").style.width = "300px";
                // $('.navbar-toggler').hide();
             }
         };

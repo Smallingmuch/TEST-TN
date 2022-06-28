@@ -8,6 +8,10 @@ body{
 #CloseButton{
     display: none;
 }
+.navbar-brand {
+    margin-right: -15rem;
+    margin-left: 5rem;
+}
 
 .navbar-nav a{
     /* font-size: 1.2rem; */
@@ -76,6 +80,46 @@ body{
     font-family: "Lato";
     font-size: 1.5rem;
 }
+#sm-device{
+    display: none;
+}
+
+/* Bottom left text */
+.bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+  }
+  
+  /* Top left text */
+  .top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+  }
+  
+  /* Top right text */
+  .top-right {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+  }
+  
+  /* Bottom right text */
+  .bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+  }
+  
+  /* Centered text */
+  .centered {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
 /* navbar becomes mobile sidebar under lg breakpoint */
 @media (max-width: 992px) {
     
@@ -87,6 +131,7 @@ body{
         left: -45%;
         transition: all 0.2s ease;
         overflow-x: hidden;
+        /* z-index: 100!important; */
     }
 
     .navbar-collapse.show .navbar-nav {
@@ -111,6 +156,9 @@ body{
     .navbar-collapse.show ul.navbar-nav li {
         border-bottom: 2px solid gray;
     }
+    .OtherMenu a {
+        font-size: 18px;
+    }
     
 }
 /* `lg` applies to medium devices (tablets, less than 992px) */
@@ -118,12 +166,30 @@ body{
     .navbar{
         background-color: black!important;
     }
+    .navbar-brand {
+        margin-right: 1rem;
+        margin-left: 0;
+    }
     .carousel-item img{
         height: 100vh;
         object-fit: cover;
     }
     .carousel-caption{
-        bottom: 0;
+        bottom: 3rem;
+    }
+    #lg-device{
+        display: none;
+    }
+    #sm-device{
+        display: inline-block;
     }
    
+      /* Centered text */
+  .centered {
+    position: absolute;
+    top: 25%;
+    left: 35%;
+    transform: translate(-10%, -10%);
+  }
+  
 }
