@@ -194,3 +194,14 @@ body{
   
 }
 
+@media (max-width: 991.98px) {
+
+  /* Centered text */
+  .centered {
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    transform: translate(-10%, -10%);
+}
+
+}
