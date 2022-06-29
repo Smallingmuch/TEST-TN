@@ -118,6 +118,7 @@ body{
     top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-align: center;
   }
 
 /* navbar becomes mobile sidebar under lg breakpoint */
@@ -185,23 +186,23 @@ body{
     }
    
       /* Centered text */
-      .centered {
+      /* .centered {
         position: absolute;
         top: 27%;
         left: 32%;
         transform: translate(-10%, -10%);
-    }
+    } */
   
 }
 
 @media (max-width: 991.98px) {
 
   /* Centered text */
-  .centered {
+  /* .centered {
     position: absolute;
-    top: 30%;
+    top: 20%;
     left: 25%;
     transform: translate(-10%, -10%);
-}
+} */
 
 }
