@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
@@ -11,134 +12,165 @@
     <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
     <script src='main.js'></script>
 </head>
+
 <body>
     <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark shadow-lg ">
         <div class="container-fluid p-lg-4">
-            <button class="navbar-toggler" onclick="ShowCloseButton()" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <button class="navbar-toggler" onclick="ShowCloseButton()" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapsibleNavbar">
                 <span class="navbar-toggler-icon"></span>
-              </button>
+            </button>
 
-              <a class="navbar-brand" href="#">Logo</a>
-              <button class="bg-info" id="sm-device" style="border-radius: 100px; height:40px; width:40px; border-color: white;" type="button" onclick="openOtherNav();" >
+            <a class="navbar-brand" href="#">Logo</a>
+            <button class="bg-info" id="sm-device"
+                style="border-radius: 100px; height:40px; width:40px; border-color: white;" type="button"
+                onclick="openOtherNav();">
                 <span class="navbar-toggler-icon" style="color:black!important;"></span>
-              </button>
-          
-          <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
-           
-            <ul class="navbar-nav" id="SlideNav">
+            </button>
 
-                <span class="nav-item" id="CloseButton" onclick="CloseMobileNav()" >
-                    <a class="nav-link h2 text-white float-end" style="margin-top: .1rem; padding:1rem 1rem; border:2px solid white"  href="#">X</a>
-                </span>
-              <li class="nav-item">
-                <a class="nav-link" href="./index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./about.html">About Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Ministries</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Watch</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Sermon</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./events.html">Events</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Give Online</a>
-              </li>
-            </ul>
-          </div>
+            <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
 
-          <button class="bg-info" id="lg-device" style="border-radius: 100px; height:40px; width:40px; border-color: white;" type="button" onclick="openOtherNav();" >
-            <span class="navbar-toggler-icon" style="color:black!important;"></span>
-          </button>
+                <ul class="navbar-nav" id="SlideNav">
 
-          <div id="OtherSidebar" class="OtherMenu">
-            <span class="float-end text-white" style="margin-top: -15%; font-size: 3rem; cursor: pointer;" onclick="closeNav()">×</span>
-            <a href="./bulletin.html"><i class="fa fa-book-bookmark text-light"></i> This week Bulletin</a>
-            <a href="#"><i class="fa fa-location-dot text-primary"></i> Plan your visit</a>
-            <a href="#"><i class="fa fa-microphone text-light"></i> Prayer Request</a>
-            <a href="#"><i class="fa fa-mail-bulk text-primary"></i> Webmail</a>
+                    <span class="nav-item" id="CloseButton" onclick="CloseMobileNav()">
+                        <a class="nav-link h2 text-white float-end"
+                            style="margin-top: .1rem; padding:1rem 1rem; border:2px solid white" href="#">X</a>
+                    </span>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Ministries</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Watch</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sermon</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./events.html">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Give Online</a>
+                    </li>
+                </ul>
+            </div>
+
+            <button class="bg-info" id="lg-device"
+                style="border-radius: 100px; height:40px; width:40px; border-color: white;" type="button"
+                onclick="openOtherNav();">
+                <span class="navbar-toggler-icon" style="color:black!important;"></span>
+            </button>
+
+            <div id="OtherSidebar" class="OtherMenu">
+                <span class="float-end text-white" style="margin-top: -15%; font-size: 3rem; cursor: pointer;"
+                    onclick="closeNav()">×</span>
+                <a href="./bulletin.html"><i class="fa fa-book-bookmark text-light"></i> This week Bulletin</a>
+                <a href="#"><i class="fa fa-location-dot text-primary"></i> Plan your visit</a>
+                <a href="#"><i class="fa fa-microphone text-light"></i> Prayer Request</a>
+                <a href="#"><i class="fa fa-mail-bulk text-primary"></i> Webmail</a>
+            </div>
+
         </div>
+    </nav>
 
-        </div>
-      </nav>
+    <!-- Start of About Section Banner -->
+    <div class="container-fluid p-0">
+        <img src="images/sliders/cookout.jpg" class="w-100" style="height: 500px; object-fit:cover;"
+            alt="event cover photo">
 
-      <!-- Start of About Section Banner -->
-      <div class="container-fluid p-0">
-        <img src="images/pastoral/01.jpg" class="d-block w-100" style="height: 400px; object-fit: cover;" alt="about banner image">
-        
         <div class="bottom-right-single text-white">
             <!-- <span class="text-uppercase h5 shadow-lg">Share this page:</span> -->
             <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
             <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
             <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-          </div>
-      </div>
-      <!-- End of About Section Banner -->
+        </div>
+    </div>
+    <!-- End of About Section Banner -->
 
-     <div class="container-fluid bg-light p-4 pe-lg-5 ps-lg-5">
-        <div class="row justify-content-center pt-lg-5 pb-lg-5 pe-lg-5 ps-lg-5">
-           <div class="col-2 col-sm-2 col-md-2 col-lg-2 text-center">
-            <h2 class="fw-light">OCT</h2>
-            <h2 class="fw-bolder fs-1">15</h2>
-            <h2 class="fw-bolder">2022</h2>
-           </div>
+    <div class="container-fluid bg-white p-4 pe-lg-5 ps-lg-5">
+        <div class="row justify-content-around pt-lg-5 pb-lg-5 pe-lg-5 ps-lg-5">
+            <div class="col-3 col-sm-2 col-md-2 col-lg-2 pe-sm-0 text-center">
+                <h2 class="p-0">OCT</h2>
+                <h2 class="event-single-date">15</h2>
+                <h2 class="p-0">2022</h2>
+            </div>
 
-           <div class="col-10 col-sm-10 col-md-10 col-lg-10">
-                <h1 class="fw-bolder">CHILD DEDICATION OF MERU CODES AND STARTUPS</h1>
+            <div class="col-9 col-sm-10 col-md-10 col-lg-10 ps-sm-0">
+                <h1 class="fw-bolder event-title">CHILD DEDICATION OF MERU CODES AND STARTUPS</h1>
+                <a class="text-warning bg-warning w-25 fw-bold">_____________________</a>
+            </div>
+
         </div>
 
-            
+        <div class="row pt-lg-5 pb-lg-5 pe-lg-5 ps-lg-5">
+            <div class="col-md-12 col-lg-12 pt-lg-5 pb-lg-5 pe-lg-5 ps-lg-5">
+                <h3 class="text-uppercase fw-bold">who</h3>
+                <p>Young Adults (Ages 19-29)</p>
+                <h3 class="text-uppercase fw-bold">what</h3>
+                <p>Join us after the 5 p.m. service at the Granger Campus for coffee and conversation in the Atrium.</p>
+                <h3 class="text-uppercase fw-bold">Where</h3>
+                <p>Granger Campus</p>
+                <h3 class="text-uppercase fw-bold">when</h3>
+                <p>Saturdays in July, following the 5 p.m. weekend service.</p>
+                <ul type="square">
+                    <li>Saturday, July 2</li>
+                    <li>Saturday, July 9</li>
+                    <li>Saturday, July 16</li>
+                    <li>Saturday, July 23</li>
+                    <li>Saturday, July 30</li>
+                </ul>
+            </div>
         </div>
-       
 
-     </div>
-    
-      <footer class="container-fluid bg-black p-lg-5 text-center">
+
+    </div>
+
+    <footer class="container-fluid bg-black p-lg-5 text-center">
         <div class="row">
-          <div class="col-md-12">
-            <h2 class="text-white">LOGO</h2>
-          </div>
+            <div class="col-md-12">
+                <h2 class="text-white">LOGO</h2>
+            </div>
         </div>
         <div class="row text-white">
-          <div class="col-md-12">
-            <ul class="justify-content-center">
-              <li><a href="./about.html">About</a></li>
-              <li><a href="./give.html">Give</a></li>
-              <li><a href="./bulletin.html">Bulletin</a></li>
-              <li><a href="#">L.I.F.E</a></li>
-              <li><a href="#">SERMONS</a></li>
-              <li><a href="#">CONTACT US</a></li>
-              <li><a href="#">CMS</a></li>
-            </ul>
-            <hr/>
-            <ul class="justify-content-center">
-              <li><a href="./about.html" class="p-3"><i class="fab fa-facebook-f"></i></a></li>
-              <li><a href="./give.html" class="p-3"><i class="fab fa-youtube"></i></a></li>
-              <li><a href="./bulletin.html" class="p-3"><i class="fab fa-instagram"></i></a></li>
-              <li><a href="#" class="p-3"><i class="fab fa-twitter"></i></a></li>
-            </ul>
-            <p>36 Ugboroke, off Airport road, Warri, Delta State.</p>
-            <p class="text-white-50">&copy; 2022 The Nigerian Baptist Church. All rights reserved. <a href="#" class="text-white-50">Privacy Policy</a></p>
-          </div>
+            <div class="col-md-12">
+                <ul class="justify-content-center">
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./give.html">Give</a></li>
+                    <li><a href="./bulletin.html">Bulletin</a></li>
+                    <li><a href="#">L.I.F.E</a></li>
+                    <li><a href="#">SERMONS</a></li>
+                    <li><a href="#">CONTACT US</a></li>
+                    <li><a href="#">CMS</a></li>
+                </ul>
+                <hr />
+                <ul class="justify-content-center">
+                    <li><a href="./about.html" class="p-3"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="./give.html" class="p-3"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="./bulletin.html" class="p-3"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#" class="p-3"><i class="fab fa-twitter"></i></a></li>
+                </ul>
+                <p>36 Ugboroke, off Airport road, Warri, Delta State.</p>
+                <p class="text-white-50">&copy; 2022 The Nigerian Baptist Church. All rights reserved. <a href="#"
+                        class="text-white-50">Privacy Policy</a></p>
+            </div>
         </div>
 
-       
-      </footer>
-      <!-- End of Church Location Section -->
-      <script src="Jquery/jquery-3.6.0.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
-      <script src="bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>      
-      <script src="js/mainJs.js"></script>
-    
+
+    </footer>
+    <!-- End of Church Location Section -->
+    <script src="Jquery/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
+    <script src="js/mainJs.js"></script>
+
 </body>
+
 </html>
