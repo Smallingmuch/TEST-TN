@@ -49,4 +49,35 @@ function  CloseMobileNav(){
         //("#collapsibleNavbar").hide("slow");
    // }
 }
+
+
+
+$( document ).ready(function() {
+ $('.pastoral').on('mouseover', function(){
+   // alert('hi');
+   $(this).find('.socials').css({
+    backgroundColor:"rgba(0, 0, 0, 0.696)"
+    
+ })
+   $(this).find('.socials a').css({
+      display:"inline-block"
+      
+   })
+
+  })
+  
+
+  $('.pastoral').on('mouseout', function(){
+    $(this).find('.socials').css({
+     backgroundColor:"transparent"
+     
+  })
+    $(this).find('.socials a').css({
+       display:"none"
+       
+    })
+ 
+   })
+
+});
        

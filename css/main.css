@@ -1,6 +1,7 @@
 body{
     font-family: "Lato", sans-serif;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	font-size: 1rem;
 	font-weight: 300;
 }
@@ -74,7 +75,7 @@ body{
     text-align: left;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: rgba(0, 0, 0, 0.486);
-   
+
 }
 .carousel-caption p{
     font-family: "Lato";
@@ -90,28 +91,34 @@ body{
     bottom: 8px;
     left: 16px;
   }
-  
+
   /* Top left text */
   .top-left {
     position: absolute;
     top: 8px;
     left: 16px;
   }
-  
+
   /* Top right text */
   .top-right {
     position: absolute;
     top: 8px;
     right: 16px;
   }
-  
+
   /* Bottom right text */
   .bottom-right {
     position: absolute;
     bottom: 8px;
-    right: 16px;
+    left: 1;
   }
-  
+  .bottom-right-single {
+    position: absolute;
+    bottom: 35%;
+    right: 50px;
+    left: 0;
+    text-align: right;
+  }
   /* Centered text */
   .centered {
     position: absolute;
@@ -120,10 +127,138 @@ body{
     transform: translate(-50%, -50%);
     text-align: center;
   }
+.btn-default{
+    border-radius: 0 0;
+    border-color:#000;
+}
+  .btn-default:hover{
+    background-color: #f00;
+    color: #fff;
+    border-color:#f00;
+  }
+  p{
+    line-height: 30px;
+    font-size: 20px;
+  }
+  .socials{
+    position: absolute;
+    bottom: 0;
+    left: 1;
+    background-color: rgb(0, 0, 0);
+    z-index: 1;
+    padding: 10% 3%;
+    width: 90%;
+    height: 200px;
+    background-color: transparent;
+    transition: 2s;
+  }
+  .event-social{
+    position: absolute;
+    top:0;
+    /* background-color: rgb(0, 0, 0); */
+    z-index: 1;
+    padding: 30% 1%;
+    text-align: right;
+    width: 90%;
+    height: 200px;
+    background-color: transparent;
+    transition: 2s;
+  }
+  .event-social a{
+    font-size: 25px;
+    padding: 5% 2%;
+    color: rgb(255, 255, 255);
+  }
+.socials a{
+    font-size: 25px;
+    padding: 5% 5%;
+    color: rgb(255, 255, 255);
+    display: none;
+  }
+  .bottom-right-single a{
+    font-size: 25px;
+    padding: 2%;
+    color:#fff;
+  }
+
+  .socials a:hover, .bottom-right-single a:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(14, 1, 87);
+  }
+
+  .dropdown-menu {
+    min-width: 100%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.46);
+  }
+  .dropdown-menu input{
+    width: 1em;
+    height:1em;
+    margin-right: 5%;
+  }
+  .events .card:hover{
+    background-color: rgba(199, 196, 196, 0.02);
+  }
+
+.event-date{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    color: #000;
+    padding: 1% 5%;
+    line-height: 0px;
+    text-align: center;
+}
+
+.fs-1{
+    font-size: 5rem !important;
+}
+
+.alert {
+    padding: .5rem 3.5rem .5rem .5rem ;
+    border:none;
+    box-shadow: 0 0 2px black;
+    background-color: rgb(0, 48, 0);
+    color: #fff;
+}
+
+.btn-close {
+    width: 0em;
+    height: 0em;
+    background-color: rgb(255, 255, 255);
+}
+/* footer declarations */
+
+footer ul li {
+    list-style-type: none;
+    padding: 2%;
+    margin: 0;
+    display: inline-block;
+}
+a{
+    text-decoration: none !important;
+}
+
+footer ul li a{
+    text-transform: uppercase;
+    font-weight: 500;
+    color:#fff;
+}
+footer ul li a >i{
+    color:#fff;
+}
+footer ul li a.p-3{
+    background-color: rgb(233, 130, 4);
+    padding: 5px ;
+    font-weight: bolder;
+}
+footer ul li a.p-3:hover{
+    background-color: rgb(38, 1, 106);
+}
 
 /* navbar becomes mobile sidebar under lg breakpoint */
 @media (max-width: 992px) {
-    
+
     .navbar-collapse.collapsing .navbar-nav {
         display: block;
         position: fixed;
@@ -160,7 +295,7 @@ body{
     .OtherMenu a {
         font-size: 18px;
     }
-    
+
 }
 /* `lg` applies to medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
@@ -184,7 +319,9 @@ body{
     #sm-device{
         display: inline-block;
     }
-   
+    .event-social{
+        padding: 80% 1%;
+    }
       /* Centered text */
       /* .centered {
         position: absolute;
@@ -192,7 +329,7 @@ body{
         left: 32%;
         transform: translate(-10%, -10%);
     } */
-  
+
 }
 
 @media (max-width: 991.98px) {
