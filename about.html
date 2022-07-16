@@ -12,65 +12,67 @@
     <script src='main.js'></script>
 </head>
 <body>
-    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-transparent shadow-lg ">
-        <div class="container-fluid p-lg-4">
-            <button class="navbar-toggler" onclick="ShowCloseButton()" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-
-              <a class="navbar-brand" href="#">Logo</a>
-              <button class="bg-info" id="sm-device" style="border-radius: 100px; height:40px; width:40px; border-color: white;" type="button" onclick="openOtherNav();" >
-                <span class="navbar-toggler-icon" style="color:black!important;"></span>
-              </button>
-          
-          <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
-           
-            <ul class="navbar-nav" id="SlideNav">
-
-                <span class="nav-item" id="CloseButton" onclick="CloseMobileNav()" >
-                    <a class="nav-link h2 text-white float-end" style="margin-top: .1rem; padding:1rem 1rem; border:2px solid white"  href="#">X</a>
-                </span>
-              <li class="nav-item">
-                <a class="nav-link" href="./index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./about.html">About Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Ministries</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Watch</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Sermon</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Calender</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Give Online</a>
-              </li>
-            </ul>
-          </div>
-
-          <button class="bg-info" id="lg-device" style="border-radius: 100px; height:40px; width:40px; border-color: white;" type="button" onclick="openOtherNav();" >
-            <span class="navbar-toggler-icon" style="color:black!important;"></span>
+  <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-transparent shadow-lg ">
+    <div class="container-fluid p-lg-4">
+        <button class="navbar-toggler" onclick="ShowCloseButton()" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
           </button>
 
-          <div id="OtherSidebar" class="OtherMenu">
-            <span class="float-end text-white" style="margin-top: -15%; font-size: 3rem; cursor: pointer;" onclick="closeNav()">×</span>
-            <a href="./bulletin.html"><i class="fa fa-book-bookmark text-light"></i> This week Bulletin</a>
-            <a href="#"><i class="fa fa-location-dot text-primary"></i> Plan your visit</a>
-            <a href="#"><i class="fa fa-microphone text-light"></i> Prayer Request</a>
-            <a href="#"><i class="fa fa-mail-bulk text-primary"></i> Webmail</a>
-        </div>
+          <a class="navbar-brand" href="#">Logo</a>
+          <button class="bg-info" id="sm-device" style="border-radius: 100px; height:40px; width:40px; border-color: white;" type="button" onclick="openOtherNav();" >
+            <span class="navbar-toggler-icon" style="color:black!important;"></span>
+          </button>
+      
+      <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+       
+        <ul class="navbar-nav" id="SlideNav">
 
-        </div>
-      </nav>
+            <span class="nav-item" id="CloseButton" onclick="CloseMobileNav()" >
+                <a class="nav-link h2 text-white float-end" style="margin-top: .1rem; padding:1rem 1rem; border:2px solid white"  href="#">X</a>
+            </span>
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Ministries</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./watch.html">Watch</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./sermon.html">Sermon</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./events.html">Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./next-step.html">Next Step</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="give.html">Give Online</a>
+          </li>
+        </ul>
+      </div>
+
+      <button class="bg-info" id="lg-device" style="border-radius: 100px; height:40px; width:40px; border-color: white;" type="button" onclick="openOtherNav();" >
+        <span class="navbar-toggler-icon" style="color:black!important;"></span>
+      </button>
+
+      <div id="OtherSidebar" class="OtherMenu">
+        <span class="float-end text-white" style="margin-top: -15%; font-size: 3rem; cursor: pointer;" onclick="closeNav()">×</span>
+        <a href="./bulletin.html"><i class="fa fa-book-bookmark text-light"></i> This week Bulletin</a>
+        <a href="#"><i class="fa fa-location-dot text-primary"></i> Plan your visit</a>
+        <a href="#"><i class="fa fa-microphone text-light"></i> Prayer Request</a>
+    </div>
+
+    </div>
+  </nav>
 
       <!-- Start of About Section Banner -->
       <div class="container-fluid p-0">
@@ -277,11 +279,7 @@
                                 EFFURUN</h5>
                                 <p>30 Ugboroke off Airport Road, Ugboroke, Warri, Delta State.</p>
                         </div>
-                        <div class="col-md-4 card border-0">
-                            <h5><i class="fa fa-home text-primary"></i> The Nigeria Baptist Baptist Church,
-                                OSUBI</h5>
-                                <p>30 Ugboroke off Airport Road, Ugboroke, Warri, Delta State.</p>
-                        </div>
+                        
                         
                     </div>
                 </div>
@@ -290,7 +288,7 @@
       </div>
 
     
-      <footer class="container-fluid bg-black p-lg-5 text-center">
+      <footer class="container-fluid bg-black pt-3 p-lg-3 text-center">
         <div class="row">
           <div class="col-md-12">
             <h2 class="text-white">LOGO</h2>
@@ -321,7 +319,6 @@
 
        
       </footer>
-      <!-- End of Church Location Section -->
       <script src="Jquery/jquery-3.6.0.min.js"></script>
       <script src="bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
       <script src="js/mainJs.js"></script>
