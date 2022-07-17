@@ -289,6 +289,45 @@ height: 0;
     width: 100%;
     height: 100%;
 }
+
+
+/* owl carousel css */
+
+.card-img-top{
+    height: 28vh;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.owl-prev{
+    left:-80px;
+}
+.owl-next{
+    right:-80px;
+}
+.owl-prev, .owl-next{
+    position: absolute;
+    top:30px;
+}
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
+    background: 0 0;
+    color: inherit;
+    border: none;
+    padding: 0!important;
+    font-size: 6rem;
+}
+/* .owl-theme .owl-nav [class*=owl-]{
+    background: #fff;
+    color:#000;
+    font-size: 10rem;
+}
+.owl-theme .owl-nav [class*=owl-]:hover{
+    background: transparent;
+    color:black;
+} */
+
+
 /* navbar becomes mobile sidebar under lg breakpoint */
 @media (max-width: 992px) {
 

@@ -55,7 +55,7 @@
                 <a class="nav-link" href="./next-step.html">Next Step</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="give.html">Give Online</a>
+                <a class="nav-link" data-bs-toggle="modal" data-bs-target="#GiveModal">Give Online</a>
               </li>
             </ul>
           </div>
@@ -125,7 +125,7 @@
       </div>
 
       <footer class="container-fluid bg-black pt-3 p-lg-3 text-center">
-        <div class="row">
+        <div class="row pt-3">
           <div class="col-md-12">
             <h2 class="text-white">LOGO</h2>
           </div>
@@ -141,11 +141,11 @@
               <li><a href="#">CONTACT US</a></li>
               <li><a href="#">CMS</a></li>
             </ul>
-            <hr/>
-            <ul class="justify-content-center">
-              <li><a href="./about.html" class="p-3"><i class="fab fa-facebook-f"></i></a></li>
-              <li><a href="./give.html" class="p-3"><i class="fab fa-youtube"></i></a></li>
-              <li><a href="./bulletin.html" class="p-3"><i class="fab fa-instagram"></i></a></li>
+            <hr class="w-75 m-auto mt-5 text-white-50"/>
+            <ul class="justify-content-center" style="margin-top: -3%; z-index: 1;">
+              <li><a href="#" class="p-3 me-md-2 me-lg-2"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="#" class="p-3 me-md-2 me-lg-2"><i class="fab fa-youtube"></i></a></li>
+              <li><a href="#" class="p-3 me-md-2 me-lg-2"><i class="fab fa-instagram"></i></a></li>
               <li><a href="#" class="p-3"><i class="fab fa-twitter"></i></a></li>
             </ul>
             <p>36 Ugboroke, off Airport road, Warri, Delta State.</p>
@@ -155,6 +155,42 @@
 
        
       </footer>
+
+
+       <!-- Start of Order of Service Modal  -->
+<div class="modal fade" id="GiveModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title fw-bold text-uppercase" id="staticBackdropLabel">Give Today</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h5 class="card-title text-uppercase">3 easy ways to give</h5>
+        <hr/>
+        <p><b>Tithe/Offering Envelopes</b></p>
+       <p>Ask any Protocol official for a Tithe/Offering Envelope</p>
+        <hr/>
+       <p><b>Give online</b></p>
+       <p>You can give online by following this link</p>
+       <button type="button" class="btn btn-primary">Give</button>
+        <hr/>
+       <p><b>Bank Transfer</b></p>
+       <p>Unite Bank for Africa</p>
+       <p>2059042523</p>
+
+       <p>Unite Bank for Africa</p>
+       <p>2059042523</p>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- Start of Order of Service Modal  -->
       <script src="Jquery/jquery-3.6.0.min.js"></script>
       <script src="bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
       <script src="js/mainJs.js"></script>

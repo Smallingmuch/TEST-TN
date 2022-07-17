@@ -90,6 +90,44 @@ function APIparser() {
 };
 
 
+
+$(".owl-carousel").owlCarousel({
+    autoplay:true,
+    autoplayhoverpause:true,
+    autoplaytimeout:80,
+    items:4,
+    nav: true,
+    navText:["&laquo;", "&raquo;"],
+    loop:true,
+    lazyLoad:true,
+    margin:20,
+    padding:5,
+    stagePadding:5,
+    animateOut:'fadeOut',
+    responsive:{
+        0:{
+            items:1,
+            dots:false
+        },
+        485: {
+            items:1,
+            dots:false
+        },
+        728:{
+            items:1,
+            dots:false
+        },
+        960:{
+            items:1,
+            dots:false
+        },
+        1200:{
+            items:1,
+            dots:false
+        }
+    }
+});
+
 $(document).ready(function () {
     APIparser();
     
@@ -122,6 +160,7 @@ $(document).ready(function () {
 
     // End Event to take off hover action from the pastoral card
 
+    
 
 
 });
