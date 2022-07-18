@@ -327,7 +327,19 @@ height: 0;
     color:black;
 } */
 
-
+.form-control{
+    height: 50px;
+    font-size: 1.2rem;
+    border: none;
+    outline: none;
+    box-shadow: 1px 3px 2px rgb(190, 188, 188);
+    border-radius: 0;
+    
+}
+.form-control:focus{
+    box-shadow: none;
+    border:1px solid rgb(190, 188, 188);
+}
 /* navbar becomes mobile sidebar under lg breakpoint */
 @media (max-width: 992px) {
 
